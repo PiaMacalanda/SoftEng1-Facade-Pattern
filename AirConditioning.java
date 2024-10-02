@@ -1,14 +1,14 @@
 public class AirConditioning implements HomeService{
 
     @Override
-    public String turnOn(){
+    public void turnOn(){
 
-        return "Aircondition is on...";
+        System.out.println("Aircondition is on...");
     }
 
     @Override
-    public String turnOff(){
+    public void turnOff(){
         
-        return "Aircondition is off";
+        System.out.println("Aircondition is off");
     }
 }
