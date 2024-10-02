@@ -1,14 +1,14 @@
 public class Tv implements HomeService {
 
     @Override
-    public String turnOn(){
+    public void turnOn(){
 
-        return "TV is on...";
+        System.out.println("TV is on...");
     }
 
     @Override
-    public String turnOff(){
+    public void turnOff(){
 
-        return "TV is off";
+        System.out.println("TV is off");
     }
 }
