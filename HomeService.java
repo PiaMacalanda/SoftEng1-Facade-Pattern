@@ -1,5 +1,5 @@
 public interface HomeService {
     
-    String turnOn();
-    String turnOff();
+    void turnOn();
+    void turnOff();
 }
