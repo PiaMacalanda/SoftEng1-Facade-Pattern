@@ -1,14 +1,14 @@
 public class Light implements HomeService{
 
     @Override
-    public String turnOn(){
+    public void turnOn(){
 
-        return "Lights are on...";
+        System.out.println("Lights are on...");
     }
 
     @Override
-    public String turnOff(){
+    public void turnOff(){
         
-        return "Lights are off";
+        System.out.println("Lights are off");
     }
 }
