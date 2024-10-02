@@ -2,16 +2,12 @@ public class HomeApp {
 
     public static void main(String[] args){
 
-        HomeService light = new Light();
-        HomeService tv = new Tv();
-        HomeService airConditioning = new AirConditioning();
+        HomeFacade homeFacade = new HomeFacade();
 
-        HomeInterface homeInterface = new HomeInterface(light, tv, airConditioning);
+        homeFacade.turnOnAll();
 
-        System.out.println("--Executes turnOnAll() HomeApp");
-        homeInterface.turnOnAll();
-
-        System.out.println("\n--Executes turnOffAll() HomeApp");
-        homeInterface.turnOffAll();
+        System.out.println();
+        
+        homeFacade.turnOffAll();
     }
 }
